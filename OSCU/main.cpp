@@ -1,7 +1,11 @@
 #include <cstdio>
-
-int main()
+int main(int argc, char *argv[])
 {
-    printf("hello from OSCU!\n");
+	if (argc != 1)
+	{
+		printf("Usage: oscu <ip-address>");
+	}
+	char* ip = *argv;
+	printf(ip);
     return 0;
 }
